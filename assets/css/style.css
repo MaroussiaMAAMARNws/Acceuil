@@ -1,11 +1,5 @@
-html {
-    background: url(/assets/images/background.jpg) no-repeat center center fixed;
-    -o-background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 
 body {
   font-family: Arial, sans-serif;
@@ -13,6 +7,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.principal {
+  background: url('../images/barre_nav.jpg');
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 8em;
+}
+
 
 header,
 footer {
@@ -30,10 +34,14 @@ nav ul {
   align-items: center;
   justify-content: space-around;
 }
+li {
+  list-style: none;
+}
 
 .nav {
   display: inline;
   padding: 1em 3em;
+  color:antiquewhite;
   background-color: #910A67;
   border-radius:42px;
 }
@@ -47,6 +55,8 @@ nav ul {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   &:hover {	
 		transform: scale(1.1) rotate(4deg);
+    color: #910A67;
+    background-color: burlywood;
 	}
 }
 

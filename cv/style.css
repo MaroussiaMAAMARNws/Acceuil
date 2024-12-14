@@ -1,27 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
+
+
 html {
-    background: url(../assets/images/background.jpg) no-repeat center center fixed;
+    background-color: #030637;
     background-size: cover;
 }
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color:aliceblue;
+  }
 
 header{
     display: flex;
     flex-direction: column;
 }
 
+
+.principal {
+  background: url('../assets/images/barre_nav.jpg');
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 8em;
+}
+
 h1{
     display: flex;
     justify-content: center;
+    font-size: 10em;
 }
 
+h1,h2,h4 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+h2 {
+  font-size: clamp(1rem, 5vw, 5rem);
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-right: -0.5em;
+  color: hsl(0, 0, 80%);
+  width: 90vw;
+  max-width: 1200px;
+}
+
+.metier {
+  text-align: center;
+}
+
+#photo {
+  width: 40%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+}
 nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
 
+  li {
+    list-style: none;
+  }
+
 .nav {
     display: inline;
+    align-items: center;
+    justify-content: space-around;
     padding: 1em 3em;
+    color:antiquewhite;
     background-color: #910A67;
     border-radius:42px;
   }
@@ -35,5 +94,62 @@ nav ul {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     &:hover {	
           transform: scale(1.1) rotate(4deg);
+          color: #910A67;
+          background-color: burlywood;
       }
   }
+
+
+section {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  visibility: hidden;
+
+.outer , .inner{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+  };
+
+  .clip-text {
+    overflow: hidden;
+  };
+.bg {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+h4 {
+  z-index: 2;
+}
+};
+
+
+.first {
+  .bg {
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),url('../assets/images/nuit1.jpg');
+  }
+};
+
+.second {
+  .bg {
+    background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),url('../assets/images/nuit2.jpg');
+  }
+}

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Maroussia MAAMAR</title>
     <link rel="stylesheet" href="style.css">
+    <script src="../assets/js/gsap.min.js.map"></script>
 </head>
 <body>
-    <header>
-        <h1>Mon CV</h1>
+    <header class="principal">
         <nav>
             <ul>
                 <li><a href="../index.html" class="nav grow-rotate">Accueil</a></li>
@@ -19,33 +19,45 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Maroussia MAAMAR</h1>
-                <h2>Alternance cheffe de projet digitale</h2>
-                    <img src="../assets/images/photo_CV_Marou.png" alt="photo maroussia" id="photo">
-                    <nav class="menu" id="menus">
-                        <ul>
-                            <li><a href="#contacts">Me contacter</a></li>
-                            <li><a href="#presentations">Parlons de moi</a></li>
-                            <li><a href="#formations">Mon apprentissage</a></li>
-                            <li><a href="#experiences">Mes expériences</a></li>
-                            <li><a href="#cv">Mon CV a télécharger</a></li>
-                        </ul>
-                    </nav>
+        <h1>Mon CV</h1>
+        <section class="first">
+            <div class="outer">
+                <div class="inner">
+                    <div class="bg">
+                        <h2 class="section-heading">Maroussia MAAMAR</h2>
+                            <h3 class="metier">Alternance cheffe de projet digitale</h3>
+                                <img src="../assets/images/photo_CV_Marou.png" alt="photo maroussia" id="photo">
+                                <nav class="menu" id="menus">
+                                    <ul>
+                                        <li><a href="#contacts" class="nav grow-rotate">Me contacter</a></li>
+                                        <li><a href="#presentations" class="nav grow-rotate">Parlons de moi</a></li>
+                                        <li><a href="#formations" class="nav grow-rotate">Mon apprentissage</a></li>
+                                        <li><a href="#experiences" class="nav grow-rotate">Mes expériences</a></li>
+                                        <li><a href="#cv" class="nav grow-rotate">Mon CV à télécharger</a></li>
+                                    </ul>
+                                </nav>
+                    </div>
+                </div>
+            </div>        
         </section>
-        <section class="contact" id="contacts">
-            <h3>En bref...</h3>
-            <ul class="liste">
-                <li>Normandie</li>
-                <li>Permis B / Véhiculé</li>
-                <li><a href="0649609549">06.49.60.95.49</a></li>
-                <li><a href="mailto:maroussia.maamar@hotmail.fr">maroussia.maamar@hotmail.fr</a></li>
-                <li>Linkedin :<a href="https://www.linkedin.com/in/maroussia-maamar/">Maroussia MAAMAR</a></li>
-            </ul>
-        </section><a href="#menus">Retour au menu</a>
+        <section class="second" id="contacts">
+            <div class="outer">
+                <div class="inner">
+                    <div class="bg">
+                        <h4 class="section-heading">En bref...</h4>
+                        <ul class="liste">
+                            <li>Normandie</li>
+                            <li>Permis B / Véhiculé</li>
+                            <li><a href="0649609549">06.49.60.95.49</a></li>
+                            <li><a href="mailto:maroussia.maamar@hotmail.fr">maroussia.maamar@hotmail.fr</a></li>
+                            <li>Linkedin :<a href="https://www.linkedin.com/in/maroussia-maamar/">Maroussia MAAMAR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         <section class="presentation" id="presentations">
             <div>
-                <h3>Qui suis-je ?</h3>
+                <h4 class="section-heading">Qui suis-je ?</h4>
                     <p>Après avoir travaillé des années dans la 
                         restauration, et animée par la création 
                         de contenus, je souhaite travailler sur le 
@@ -55,7 +67,7 @@
                         à la recherche d’une entreprise .</p>
             </div>
             <div>
-                <h3>Soft Skills</h3>
+                <h4 class="section-heading">Soft Skills</h4>
                     <ul>
                         <li>Polyvalence et adaptabilité</li>
                         <li>Autodidacte</li>
@@ -64,16 +76,15 @@
                     </ul>
             </div>
             <div>
-                <h3>Mes centres d'intérêt</h3>
+                <h4 class="section-heading">Mes centres d'intérêt</h4>
                     <p> A remplir plus en détails</p>
             </div>
-        </section><a href="#menus">Retour au menu</a>
         <section class="formation" id="formations">
             <div>
-                <h3>Formation</h3>
+                <h4 class="section-heading">Formation</h4>
                 <article>
-                    <h4>Normandie Web School 2024-2027</h4>
-                        <h5>Bachelor Chef de projet digital (Alternance)</h5>
+                    <h5>Normandie Web School 2024-2027</h5>
+                        <h6>Bachelor Chef de projet digital (Alternance)</h6>
                             <ul>
                                 <li>Conception numérique</li>
                                 <li>Spécialisation communication digitale</li>
@@ -81,8 +92,8 @@
                             </ul>
                 </article>
                 <article>
-                    <h4>Ecole O’Clock 2023-2024</h4>
-                        <h5>Développeur Web et Web mobile</h5>
+                    <h5>Ecole O’Clock 2023-2024</h5>
+                        <h6>Développeur Web et Web mobile</h6>
                             <ul>
                                 <li>1500 heures</li>
                                 <li> Projet tutoré de 2 mois</li>
@@ -90,14 +101,14 @@
                 </article>
             </div>
             <div>
-                <h3>Langues</h3>
+                <h4 class="section-heading">Langues</h4>
                     <ul>
                         <li>Anglais Niveau C1 plus</li>
                         <li>Allemand Niveau C1</li>
                     </ul>
             </div>
             <div>
-                <h3>Compétences</h3>
+                <h4 class="section-heading">Compétences</h4>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -110,12 +121,11 @@
                         <li>VS Code</li>
                     </ul>
             </div>
-        </section><a href="#menus">Retour au menu</a>
         <section class="experience" id="experiences">
-            <h3>Expérience</h3>
+            <h4 class="section-heading">Expérience</h4>
             <article>
-                <h4>Développeur Web Avril-Juin 2024</h4>
-                    <h5>Ecole O’Clock</h5>
+                <h5>Développeur Web Avril-Juin 2024</h5>
+                    <h6>Ecole O’Clock</h6>
                         <ul>
                             <li>Création d’un site internet.</li>
                             <li>Réalisation du cahier des charges (MCD, 
@@ -126,8 +136,8 @@
                         </ul>
             </article>
             <article>
-                <h4>Assistante de Département 2022-2023</h4>
-                    <h5>Disneyland Paris - Walt Disney Imagineering</h5>
+                <h5>Assistante de Département 2022-2023</h5>
+                    <h6>Disneyland Paris - Walt Disney Imagineering</h6>
                         <ul>
                             <li>Création de design communication interne</li>
                             <li>Gestion base de données DBeaver</li>
@@ -138,14 +148,12 @@
                             <li>Tâche RH / Gestion d’équipe</li>
                         </ul>
             </article>
-        </section><a href="#menus">Retour au menu</a>
         <section class="cv" id="cv">
-            <h3>Convaincu ?</h3>
+            <h4 class="section-heading">Convaincu ?</h4>
             <p>Je suis la professionnelle que vous recherchez?</p>
             <p>Vous voulez parlez de moi à votre entourage?</p>
             <p>Mon CV sur mon site est sympa mais vous voulez une version simplifié?</p>
             <p>Je peux réaliser vos souhaits ! Cliquez <a href="assets/pdf/CV_Maroussia_MAAMAR_Alternance_Cheffe_de_projet_digital_2.pdf" download="CV-Maroussia-MAAMAR">ICI</a> pour télécharger mon CV en PDF</p>
-        </section><a href="#menus">Retour au menu</a>
     </main>
     <footer>
         <div>
@@ -153,5 +161,6 @@
             <a href="https://www.linkedin.com/in/maroussia-maamar/">Maroussia MAAMAR</a>
         </div>
     </footer>
+    <script src="../assets/js/js.js"></script>
 </body>
 </html>
