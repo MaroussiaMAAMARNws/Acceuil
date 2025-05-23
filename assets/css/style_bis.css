@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+.principal {
+  background: url('../images/background_fleurs.png');
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 8em;
+}
+header,
+footer {
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+li {
+  list-style: none;
+}
+
+.nav {
+  display: inline;
+  padding: 1em 3em;
+  color:antiquewhite;
+  background-color: #910A67;
+  border-radius:42px;
+}
+
+.grow-rotate {
+  display: inline-block;
+  transition-duration: .3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  &:hover {	
+		transform: scale(1.1) rotate(4deg);
+    color: #910A67;
+    background-color: burlywood;
+	}
+}
+.navigation {
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 25%;
+  margin: 0;
+}
