@@ -94,16 +94,16 @@ $experiences = [
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV de <?php echo $prenom . " " . $nom; ?></title>
-    <link rel="stylesheet" href="../assets/css/style_bis.css">
+    <link rel="stylesheet" href="assets/css/style_bis.css">
 </head>
 <body>
     <header class="principal">
         <nav>
             <ul>
-                <li><a href="../index.html" class="nav grow-rotate">Accueil</a></li>
+                <li><a href="index.html" class="nav grow-rotate">Accueil</a></li>
                 <li><a href="#" class="nav grow-rotate">À propos</a></li>
                 <li><a href="#" class="nav grow-rotate">Contact</a></li>
-                <li><a href="cv_bis.html" class="nav grow-rotate">Mon CV</a></li>
+                <li><a href="cv.php" class="nav grow-rotate">Mon CV</a></li>
             </ul>
         </nav>
     </header>
