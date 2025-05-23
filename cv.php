@@ -100,10 +100,9 @@ $experiences = [
     <header class="principal">
         <nav>
             <ul>
-                <li><a href="index.html" class="nav grow-rotate">Accueil</a></li>
-                <li><a href="#" class="nav grow-rotate">À propos</a></li>
-                <li><a href="#" class="nav grow-rotate">Contact</a></li>
-                <li><a href="cv.php" class="nav grow-rotate">Mon CV</a></li>
+                <?php foreach ($header as $head): ?>
+                    <li><a href="index.html" class="nav grow-rotate"><?php echo $head; ?></a></li>
+                <?php endforeach; ?>
             </ul>
         </nav>
     </header>
