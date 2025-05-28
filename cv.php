@@ -1,4 +1,14 @@
+//faire une boucle pour chaque SELECT //
+
 <?php
+SELECT * FROM `en_bref` LIMIT 50;
+SELECT * FROM `presentation` LIMIT 50;
+SELECT * FROM `soft_skills` LIMIT 50;
+SELECT * FROM `formation` LIMIT 50;
+SELECT * FROM `langues` LIMIT 50;
+SELECT * FROM `competences` LIMIT 50;
+SELECT * FROM `experiences` LIMIT 50;
+
 $nom = "MAAMAR";
 $prenom = "Maroussia";
 $titre = "Alternance cheffe de projet digitale";
