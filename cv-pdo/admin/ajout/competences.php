@@ -1,3 +1,6 @@
+<?php
+    include '../../config/database_co.php';
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,11 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="">
-        <h1>Ajouter une compétence </h1>
-        <form action "#" method="POST">
-            <input type="hidden" name="type" value="competences">
-            
-    </div>
+    <h1>Ajouter une compétence </h1>
+    <form action "#" method="POST">
+        <input type="hidden" name="type" value="competences">
+        Nom: <input type="text" name="nom">
+        Niveau: <input type="text" name="niveau">
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+    <button type="reset" class="btn btn-secondary">Annuler</button>
+</form>
 </body>
 </html>
